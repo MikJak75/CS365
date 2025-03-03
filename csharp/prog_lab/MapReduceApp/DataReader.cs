@@ -2,7 +2,7 @@ using System.Collections;
 using System.IO;
 using System.Threading.Tasks.Dataflow;
 
-public class DataReader : IEnumerable {
+public partial class DataReader : IEnumerable {
 //public class DataReader {
     //private double[] _data;
     private double[] _data;
@@ -65,21 +65,21 @@ public class DataReader : IEnumerable {
 }
 
 
-public class DataReaderEnum : IEnumerator{
-    private double[] _dataref;
-    private int _pos;
-    public DataReaderEnum(double[] data){
-        _dataref = data;
-        Reset();
-    }
-    public void Reset(){
-        _pos = -1;
-    }
-    public object Current{
-        get => _dataref[_pos];
-    }
-    public bool MoveNext(){
-        _pos += 1;
-        return (_pos < _dataref.Length);
-    }
-}
+//public class DataReaderEnum : IEnumerator{
+    //private double[] _dataref;
+    //private int _pos;
+    //public DataReaderEnum(double[] data){
+        //_dataref = data;
+        //Reset();
+    //}
+    //public void Reset(){
+        //_pos = -1;
+    //}
+    //public object Current{
+        //get => _dataref[_pos];
+    //}
+    //public bool MoveNext(){
+        //_pos += 1;
+        //return (_pos < _dataref.Length);
+    //}
+//}
