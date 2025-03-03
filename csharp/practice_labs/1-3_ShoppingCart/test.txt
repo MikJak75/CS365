@@ -1,0 +1,5 @@
+10 hi yo 
+32 i am cool
+12 bruh
+8.5 hi
+10 a b c

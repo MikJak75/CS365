@@ -1,0 +1,14 @@
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-2_IOBasics/bin/Debug/net9.0/1-2_IOBasics
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-2_IOBasics/bin/Debug/net9.0/1-2_IOBasics.deps.json
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-2_IOBasics/bin/Debug/net9.0/1-2_IOBasics.runtimeconfig.json
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-2_IOBasics/bin/Debug/net9.0/1-2_IOBasics.dll
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-2_IOBasics/bin/Debug/net9.0/1-2_IOBasics.pdb
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-2_IOBasics/obj/Debug/net9.0/1-2_IOBasics.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-2_IOBasics/obj/Debug/net9.0/1-2_IOBasics.AssemblyInfoInputs.cache
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-2_IOBasics/obj/Debug/net9.0/1-2_IOBasics.AssemblyInfo.cs
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-2_IOBasics/obj/Debug/net9.0/1-2_IOBasics.csproj.CoreCompileInputs.cache
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-2_IOBasics/obj/Debug/net9.0/1-2_IOBasics.dll
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-2_IOBasics/obj/Debug/net9.0/refint/1-2_IOBasics.dll
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-2_IOBasics/obj/Debug/net9.0/1-2_IOBasics.pdb
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-2_IOBasics/obj/Debug/net9.0/1-2_IOBasics.genruntimeconfig.cache
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-2_IOBasics/obj/Debug/net9.0/ref/1-2_IOBasics.dll

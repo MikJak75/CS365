@@ -1,0 +1,14 @@
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-3_ShoppingCart/bin/Debug/net9.0/1-3_ShoppingCart
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-3_ShoppingCart/bin/Debug/net9.0/1-3_ShoppingCart.deps.json
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-3_ShoppingCart/bin/Debug/net9.0/1-3_ShoppingCart.runtimeconfig.json
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-3_ShoppingCart/bin/Debug/net9.0/1-3_ShoppingCart.dll
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-3_ShoppingCart/bin/Debug/net9.0/1-3_ShoppingCart.pdb
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-3_ShoppingCart/obj/Debug/net9.0/1-3_ShoppingCart.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-3_ShoppingCart/obj/Debug/net9.0/1-3_ShoppingCart.AssemblyInfoInputs.cache
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-3_ShoppingCart/obj/Debug/net9.0/1-3_ShoppingCart.AssemblyInfo.cs
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-3_ShoppingCart/obj/Debug/net9.0/1-3_ShoppingCart.csproj.CoreCompileInputs.cache
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-3_ShoppingCart/obj/Debug/net9.0/1-3_ShoppingCart.dll
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-3_ShoppingCart/obj/Debug/net9.0/refint/1-3_ShoppingCart.dll
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-3_ShoppingCart/obj/Debug/net9.0/1-3_ShoppingCart.pdb
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-3_ShoppingCart/obj/Debug/net9.0/1-3_ShoppingCart.genruntimeconfig.cache
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-3_ShoppingCart/obj/Debug/net9.0/ref/1-3_ShoppingCart.dll

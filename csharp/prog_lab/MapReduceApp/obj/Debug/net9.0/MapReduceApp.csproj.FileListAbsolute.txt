@@ -12,3 +12,4 @@
 /Users/Mikolaj/Documents/Courses/CS365/csharp/prog_lab/MapReduceApp/obj/Debug/net9.0/MapReduceApp.pdb
 /Users/Mikolaj/Documents/Courses/CS365/csharp/prog_lab/MapReduceApp/obj/Debug/net9.0/MapReduceApp.genruntimeconfig.cache
 /Users/Mikolaj/Documents/Courses/CS365/csharp/prog_lab/MapReduceApp/obj/Debug/net9.0/ref/MapReduceApp.dll
+/Users/Mikolaj/Documents/Courses/CS365/csharp/prog_lab/MapReduceApp/obj/Debug/net9.0/MapReduceApp.sourcelink.json

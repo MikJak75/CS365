@@ -1,0 +1,14 @@
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-12_async_await/bin/Debug/net9.0/2_12_async_await
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-12_async_await/bin/Debug/net9.0/2_12_async_await.deps.json
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-12_async_await/bin/Debug/net9.0/2_12_async_await.runtimeconfig.json
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-12_async_await/bin/Debug/net9.0/2_12_async_await.dll
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-12_async_await/bin/Debug/net9.0/2_12_async_await.pdb
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-12_async_await/obj/Debug/net9.0/2_12_async_await.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-12_async_await/obj/Debug/net9.0/2_12_async_await.AssemblyInfoInputs.cache
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-12_async_await/obj/Debug/net9.0/2_12_async_await.AssemblyInfo.cs
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-12_async_await/obj/Debug/net9.0/2_12_async_await.csproj.CoreCompileInputs.cache
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-12_async_await/obj/Debug/net9.0/2_12_async_await.dll
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-12_async_await/obj/Debug/net9.0/refint/2_12_async_await.dll
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-12_async_await/obj/Debug/net9.0/2_12_async_await.pdb
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-12_async_await/obj/Debug/net9.0/2_12_async_await.genruntimeconfig.cache
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-12_async_await/obj/Debug/net9.0/ref/2_12_async_await.dll

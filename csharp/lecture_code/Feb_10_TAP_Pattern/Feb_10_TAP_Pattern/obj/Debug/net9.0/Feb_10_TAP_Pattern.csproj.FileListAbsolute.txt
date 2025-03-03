@@ -1,0 +1,14 @@
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/Feb_10_TAP_Pattern/Feb_10_TAP_Pattern/bin/Debug/net9.0/Feb_10_TAP_Pattern
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/Feb_10_TAP_Pattern/Feb_10_TAP_Pattern/bin/Debug/net9.0/Feb_10_TAP_Pattern.deps.json
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/Feb_10_TAP_Pattern/Feb_10_TAP_Pattern/bin/Debug/net9.0/Feb_10_TAP_Pattern.runtimeconfig.json
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/Feb_10_TAP_Pattern/Feb_10_TAP_Pattern/bin/Debug/net9.0/Feb_10_TAP_Pattern.dll
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/Feb_10_TAP_Pattern/Feb_10_TAP_Pattern/bin/Debug/net9.0/Feb_10_TAP_Pattern.pdb
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/Feb_10_TAP_Pattern/Feb_10_TAP_Pattern/obj/Debug/net9.0/Feb_10_TAP_Pattern.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/Feb_10_TAP_Pattern/Feb_10_TAP_Pattern/obj/Debug/net9.0/Feb_10_TAP_Pattern.AssemblyInfoInputs.cache
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/Feb_10_TAP_Pattern/Feb_10_TAP_Pattern/obj/Debug/net9.0/Feb_10_TAP_Pattern.AssemblyInfo.cs
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/Feb_10_TAP_Pattern/Feb_10_TAP_Pattern/obj/Debug/net9.0/Feb_10_TAP_Pattern.csproj.CoreCompileInputs.cache
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/Feb_10_TAP_Pattern/Feb_10_TAP_Pattern/obj/Debug/net9.0/Feb_10_TAP_Pattern.dll
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/Feb_10_TAP_Pattern/Feb_10_TAP_Pattern/obj/Debug/net9.0/refint/Feb_10_TAP_Pattern.dll
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/Feb_10_TAP_Pattern/Feb_10_TAP_Pattern/obj/Debug/net9.0/Feb_10_TAP_Pattern.pdb
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/Feb_10_TAP_Pattern/Feb_10_TAP_Pattern/obj/Debug/net9.0/Feb_10_TAP_Pattern.genruntimeconfig.cache
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/Feb_10_TAP_Pattern/Feb_10_TAP_Pattern/obj/Debug/net9.0/ref/Feb_10_TAP_Pattern.dll

@@ -1,0 +1,14 @@
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-4_Factors/bin/Debug/net9.0/1-4_Factors
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-4_Factors/bin/Debug/net9.0/1-4_Factors.deps.json
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-4_Factors/bin/Debug/net9.0/1-4_Factors.runtimeconfig.json
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-4_Factors/bin/Debug/net9.0/1-4_Factors.dll
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-4_Factors/bin/Debug/net9.0/1-4_Factors.pdb
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-4_Factors/obj/Debug/net9.0/1-4_Factors.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-4_Factors/obj/Debug/net9.0/1-4_Factors.AssemblyInfoInputs.cache
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-4_Factors/obj/Debug/net9.0/1-4_Factors.AssemblyInfo.cs
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-4_Factors/obj/Debug/net9.0/1-4_Factors.csproj.CoreCompileInputs.cache
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-4_Factors/obj/Debug/net9.0/1-4_Factors.dll
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-4_Factors/obj/Debug/net9.0/refint/1-4_Factors.dll
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-4_Factors/obj/Debug/net9.0/1-4_Factors.pdb
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-4_Factors/obj/Debug/net9.0/1-4_Factors.genruntimeconfig.cache
+/Users/Mikolaj/Documents/Courses/CS365/practice_labs/1-4_Factors/obj/Debug/net9.0/ref/1-4_Factors.dll

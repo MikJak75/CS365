@@ -1,0 +1,14 @@
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7/bin/Debug/net9.0/2-7
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7/bin/Debug/net9.0/2-7.deps.json
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7/bin/Debug/net9.0/2-7.runtimeconfig.json
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7/bin/Debug/net9.0/2-7.dll
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7/bin/Debug/net9.0/2-7.pdb
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7/obj/Debug/net9.0/2-7.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7/obj/Debug/net9.0/2-7.AssemblyInfoInputs.cache
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7/obj/Debug/net9.0/2-7.AssemblyInfo.cs
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7/obj/Debug/net9.0/2-7.csproj.CoreCompileInputs.cache
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7/obj/Debug/net9.0/2-7.dll
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7/obj/Debug/net9.0/refint/2-7.dll
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7/obj/Debug/net9.0/2-7.pdb
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7/obj/Debug/net9.0/2-7.genruntimeconfig.cache
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7/obj/Debug/net9.0/ref/2-7.dll

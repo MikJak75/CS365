@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Feb_10_TAP_Pattern/1.0.0": {
+        "runtime": {
+          "Feb_10_TAP_Pattern.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Feb_10_TAP_Pattern/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

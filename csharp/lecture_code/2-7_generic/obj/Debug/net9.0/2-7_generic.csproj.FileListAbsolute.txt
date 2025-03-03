@@ -1,0 +1,14 @@
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7_generic/bin/Debug/net9.0/2-7_generic
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7_generic/bin/Debug/net9.0/2-7_generic.deps.json
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7_generic/bin/Debug/net9.0/2-7_generic.runtimeconfig.json
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7_generic/bin/Debug/net9.0/2-7_generic.dll
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7_generic/bin/Debug/net9.0/2-7_generic.pdb
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7_generic/obj/Debug/net9.0/2-7_generic.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7_generic/obj/Debug/net9.0/2-7_generic.AssemblyInfoInputs.cache
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7_generic/obj/Debug/net9.0/2-7_generic.AssemblyInfo.cs
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7_generic/obj/Debug/net9.0/2-7_generic.csproj.CoreCompileInputs.cache
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7_generic/obj/Debug/net9.0/2-7_generic.dll
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7_generic/obj/Debug/net9.0/refint/2-7_generic.dll
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7_generic/obj/Debug/net9.0/2-7_generic.pdb
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7_generic/obj/Debug/net9.0/2-7_generic.genruntimeconfig.cache
+/Users/Mikolaj/Documents/Courses/CS365/lecture_code/2-7_generic/obj/Debug/net9.0/ref/2-7_generic.dll
