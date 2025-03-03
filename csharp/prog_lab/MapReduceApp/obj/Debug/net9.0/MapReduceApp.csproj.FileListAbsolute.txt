@@ -1,0 +1,14 @@
+/Users/Mikolaj/Documents/Courses/CS365/csharp/prog_lab/MapReduceApp/bin/Debug/net9.0/MapReduceApp
+/Users/Mikolaj/Documents/Courses/CS365/csharp/prog_lab/MapReduceApp/bin/Debug/net9.0/MapReduceApp.deps.json
+/Users/Mikolaj/Documents/Courses/CS365/csharp/prog_lab/MapReduceApp/bin/Debug/net9.0/MapReduceApp.runtimeconfig.json
+/Users/Mikolaj/Documents/Courses/CS365/csharp/prog_lab/MapReduceApp/bin/Debug/net9.0/MapReduceApp.dll
+/Users/Mikolaj/Documents/Courses/CS365/csharp/prog_lab/MapReduceApp/bin/Debug/net9.0/MapReduceApp.pdb
+/Users/Mikolaj/Documents/Courses/CS365/csharp/prog_lab/MapReduceApp/obj/Debug/net9.0/MapReduceApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Mikolaj/Documents/Courses/CS365/csharp/prog_lab/MapReduceApp/obj/Debug/net9.0/MapReduceApp.AssemblyInfoInputs.cache
+/Users/Mikolaj/Documents/Courses/CS365/csharp/prog_lab/MapReduceApp/obj/Debug/net9.0/MapReduceApp.AssemblyInfo.cs
+/Users/Mikolaj/Documents/Courses/CS365/csharp/prog_lab/MapReduceApp/obj/Debug/net9.0/MapReduceApp.csproj.CoreCompileInputs.cache
+/Users/Mikolaj/Documents/Courses/CS365/csharp/prog_lab/MapReduceApp/obj/Debug/net9.0/MapReduceApp.dll
+/Users/Mikolaj/Documents/Courses/CS365/csharp/prog_lab/MapReduceApp/obj/Debug/net9.0/refint/MapReduceApp.dll
+/Users/Mikolaj/Documents/Courses/CS365/csharp/prog_lab/MapReduceApp/obj/Debug/net9.0/MapReduceApp.pdb
+/Users/Mikolaj/Documents/Courses/CS365/csharp/prog_lab/MapReduceApp/obj/Debug/net9.0/MapReduceApp.genruntimeconfig.cache
+/Users/Mikolaj/Documents/Courses/CS365/csharp/prog_lab/MapReduceApp/obj/Debug/net9.0/ref/MapReduceApp.dll
