@@ -1,7 +1,7 @@
-
 using System.Collections;
 using System.IO;
 
+// Enumerator so implement Reset() Current and MoveNext()
 public partial class DataReaderEnum : IEnumerator{
     private double[] _dataref;
     private int _pos;

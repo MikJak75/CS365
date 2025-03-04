@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
+// Full class MapReduce
 public partial class MapReduce<T> {
     private List<T> _data;
     public string name;
@@ -20,6 +21,7 @@ public partial class MapReduce<T> {
         get;
         set;
     }
+    //Indexer
     public T this[int index]{
         get => _data[index];
         set => _data[index] = value;
