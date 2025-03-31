@@ -1,29 +1,28 @@
 using System.Collections;
 using System.IO;
-using System.Threading.Tasks.Dataflow;
+using System;
 
 public partial class DataReader : IEnumerable {
-//public class DataReader {
-    //private double[] _data;
     private double[] _data;
     
-    //public DataReaderEnum GetEnumerator(){
-        //return new DataReaderEnum(_data);
-    //}
     public IEnumerator GetEnumerator(){
         return new DataReaderEnum(_data);
     }
 
+    //Construt by reading in data
     public DataReader(string filename){
         BinaryReader br;
 
+        //If no filename entered
         if (filename == null){
             throw new FileNotFoundException();
         }
+        //If filename doesn't exist
         if ( !(File.Exists(filename)) ) {
             throw new FileNotFoundException();
         }
 
+        // Find number of bytes and thus number of doubles that will be read in
         long num_bytes = new System.IO.FileInfo(filename).Length;
         int num_doubles = (int)(num_bytes/8);
 
@@ -39,6 +38,7 @@ public partial class DataReader : IEnumerable {
             return;
         }
 
+        // Read in num_doubles doubles
         for(int i = 0; i < num_doubles; i++){
             _data[i] = br.ReadDouble();
         }
@@ -52,6 +52,7 @@ public partial class DataReader : IEnumerable {
     }
     public double this[int index]{
         get {
+            // If index is out of bounds throw
             if (index >= Count){
                 throw new IndexOutOfRangeException();
             }
@@ -64,22 +65,3 @@ public partial class DataReader : IEnumerable {
 
 }
 
-
-//public class DataReaderEnum : IEnumerator{
-    //private double[] _dataref;
-    //private int _pos;
-    //public DataReaderEnum(double[] data){
-        //_dataref = data;
-        //Reset();
-    //}
-    //public void Reset(){
-        //_pos = -1;
-    //}
-    //public object Current{
-        //get => _dataref[_pos];
-    //}
-    //public bool MoveNext(){
-        //_pos += 1;
-        //return (_pos < _dataref.Length);
-    //}
-//}
