@@ -27,9 +27,12 @@ readBCD bytes
 decodeBCD :: [Word8] -> Word32
 decodeBCD bytes = do
 
+    -- take each byte and find the value inside it, then add it to the total
     (decodeByte (convertedBytes !! 3) 1) + (decodeByte (convertedBytes !! 2) 100) + (decodeByte (convertedBytes !! 1) 10000) + (decodeByte (convertedBytes !! 0) 1000000)    
     where
+    -- convert to Word32s
         convertedBytes = map (fromIntegral :: Word8 -> Word32) bytes
+        -- pass in a byte and specify the power by which the first digit will be multiplied
         decodeByte byte power = ((byte .&. 15) * power) + ( ((shiftR byte 4) .&. 15 ) * power * 10)
 
 
