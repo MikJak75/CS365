@@ -23,7 +23,7 @@ fn main() {
     while let Ok(()) = f1.read_exact(&mut buf){
         let first_byte = buf[0];
 
-        let bytes_as_int = u32::from_ne_bytes(
+        let bytes_as_int = u32::from_be_bytes(
             //(buf[1..]).try_into().unwrap()
             (buf[1..]).try_into().unwrap()
         );
@@ -52,12 +52,15 @@ fn main() {
 
     let mut f2 = File::create(&a[2]).expect("can't create file");
     for val in val_vec {
-        //writeln!(f2, "{}", val).expect("error writing");
-        writeln!(f2, "{}", val).unwrap();
+        writeln!(f2, "{}", val).expect("error writing");
+        //writeln!(f2, "{}", val).unwrap();
     }
 
 
-    //println!("Hello, world!");
+
+    println!("here1");
+    decode_dpd(0x0a395bcf);
+    println!("here");
     //println!("Decode val:  {}", val_vec[0].decode());
 }
 
@@ -102,9 +105,87 @@ impl PartialEq for CompValue {
 
 impl Eq for CompValue {}
 
-pub fn decode_bcd(x: u32) -> u32 {
     //x.to_be_bytes().iter().zip([1000000 ,10000, 100, 1].iter())
-    x.to_be_bytes().iter().zip([1, 100, 10_000, 1_000_000].iter())
+pub fn decode_bcd(x: u32) -> u32 {
+    x.to_be_bytes().iter().zip([1000000 ,10000, 100, 1].iter())
+    //x.to_be_bytes().iter().zip([1, 100, 10_000, 1_000_000].iter())
     .map(|(&bits, &multiplier)| ((bits & 0xf) as u32)*multiplier + ((bits >> 4) as u32)*multiplier*10)
     .fold(0, |acc, x| acc + x )
+}
+
+pub fn decode_dpd(x: u32) -> u32{
+    let mut nibbles: [u32; 3] = [0; 3];
+
+    nibbles[0] = x & 0b11_1111_1111;
+    nibbles[1] = (x >> 10) & 0b11_1111_1111;
+    nibbles[2] = (x >> 20) & 0b11_1111_1111;
+
+    //println!("{x:#b}", nibbles);
+    
+    for val in nibbles {
+        //println!("{:#b}", val);
+        decode_nibble(val);
+    }
+
+    return 0;
+}
+
+pub fn decode_nibble(nibble: u32) -> u32{
+    let r = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
+    //let bits = ([1..=10] as [u32; 10]).iter()
+    let bits = r.iter()
+    .map(|&x| get_bit_at(nibble, x))
+    .collect::<Vec<u32>>();
+
+    let mut decoded_val:u32 = 0;
+    //let (mut a, mut b, mut c, mut d, mut e, mut f, mut g, mut h, mut i)
+    //= (0, 0, 0, 0, 0, 0, 0, 0, 0);
+
+    //let (mut dig1, mut dig2, mut dig3) = (0, 0, 0);
+
+    if (bits[6] == 0){
+        //row 1 logic
+        let a = bits[0];
+        let b = bits[1];
+        let c = bits[2];
+        let d = bits[3];
+        let e = bits[4];
+        let f = bits[5];
+        let g = bits[7];
+        let h = bits[8];
+        let i = bits[9];
+
+        let dig1 = (a << 2) + (b << 1) + c;
+        let dig2 = (d << 2) + (e << 1) + f;
+        let dig3 = (g << 2) + (h << 1) + i;
+
+        decoded_val = dig1 * 100 + dig2 * 10 + dig3;
+
+    } else if ( (bits[3] == 1) &&  bits[4] == 0 && bits[6] == 1 && bits[7] == 1 && bits[8] ==1){
+        //row 7 logic
+        let a = bits[0];
+        let b = bits[1];
+        let c = bits[2];
+        let f = bits[5];
+        let i = bits[9];
+
+        let dig1 = (a << 2) + (b << 1) + c;
+        let dig2 = 0b1000 + f;
+        let dig3 = 0b1000 + i;
+
+        decoded_val = dig1 * 100 + dig2 * 10 + dig3;
+    } else {
+        println!("not a valid decoding pattern");
+        return 11;
+    }
+
+
+    //if bits
+    println!("decoded val{}", decoded_val);
+
+    return decoded_val;
+}
+
+pub fn get_bit_at(input: u32, n: u32) -> u32{
+    (input >> n) & 1
 }
