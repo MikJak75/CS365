@@ -59,8 +59,10 @@ fn main() {
 
 
     println!("here1");
-    decode_dpd(0x0a395bcf);
+    let val = decode_dpd(0x0a395bcf);
+
     println!("here");
+    println!("Decoded val is {}", val)
     //println!("Decode val:  {}", val_vec[0].decode());
 }
 
@@ -74,7 +76,8 @@ impl CompValue {
     pub fn decode(&self) -> u32 {
        match self {
             CompValue::Bcd(x) => decode_bcd(*x),
-            CompValue::Dpd(x) => 2
+            //CompValue::Dpd(x) => 2
+            CompValue::Dpd(x) => decode_dpd(*x)
        } 
     }
 }
@@ -127,7 +130,10 @@ pub fn decode_dpd(x: u32) -> u32{
         decode_nibble(val);
     }
 
-    return 0;
+    
+    
+    let val = decode_nibble(nibbles[0]) + decode_nibble(nibbles[1]) * 1_000 + decode_nibble(nibbles[2]) * 1_000_000;
+    return val
 }
 
 pub fn decode_nibble(nibble: u32) -> u32{
@@ -143,7 +149,11 @@ pub fn decode_nibble(nibble: u32) -> u32{
 
     //let (mut dig1, mut dig2, mut dig3) = (0, 0, 0);
 
-    if (bits[6] == 0){
+    if nibble == 0{
+        return 0;
+    }
+
+    if bits[6] == 0{
         //row 1 logic
         let a = bits[0];
         let b = bits[1];
@@ -161,7 +171,7 @@ pub fn decode_nibble(nibble: u32) -> u32{
 
         decoded_val = dig1 * 100 + dig2 * 10 + dig3;
 
-    } else if ( (bits[3] == 1) &&  bits[4] == 0 && bits[6] == 1 && bits[7] == 1 && bits[8] ==1){
+    } else if  bits[3] == 1 &&  bits[4] == 0 && bits[6] == 1 && bits[7] == 1 && bits[8] ==1{
         //row 7 logic
         let a = bits[0];
         let b = bits[1];
@@ -174,10 +184,116 @@ pub fn decode_nibble(nibble: u32) -> u32{
         let dig3 = 0b1000 + i;
 
         decoded_val = dig1 * 100 + dig2 * 10 + dig3;
-    } else {
-        println!("not a valid decoding pattern");
-        return 11;
+    } 
+    //row 2 logic
+    else if bits[6] == 1 && bits[7] == 0 && bits[8] == 0
+    {
+        let a = bits[0];
+        let b = bits[1];
+        let c = bits[2];
+        let d = bits[3];
+        let e = bits[4];
+        let f = bits[5];
+        let i = bits[9];
+
+        let dig1 = (a << 2) + (b << 1) + c;
+        let dig2 = (d << 2) + (e << 1) + f;
+        let dig3 = 0b1000 + i;
+
+        decoded_val = dig1 * 100 + dig2 * 10 + dig3;
     }
+
+    //row 3 logic
+    else if bits[6] == 1 && bits[7] == 0 && bits[8] == 1
+    {
+        let a = bits[0];
+        let b = bits[1];
+        let c = bits[2];
+        let g = bits[3];
+        let h = bits[4];
+        let f = bits[5];
+        let i = bits[9];
+
+        let dig1 = (a << 2) + (b << 1) + c;
+        let dig2 = 0b1000 + f;
+        let dig3 = (g << 2) + (h << 1) + i;
+
+        decoded_val = dig1 * 100 + dig2 * 10 + dig3;
+    }
+    
+    // row 4 logic
+    else if bits[6] == 1 && bits[7] == 1 && bits[8] == 0
+    {
+        let g = bits[0];
+        let h = bits[1];
+        let c = bits[2];
+        let d = bits[3];
+        let e = bits[4];
+        let f = bits[5];
+        let i = bits[9];
+
+        let dig1 = 0b1000 + c;
+        let dig2 = (d << 2) + (e << 1) + f;
+        let dig3 = (g << 2) + (h << 1) + i;
+
+        decoded_val = dig1 * 100 + dig2 * 10 + dig3;
+    }
+
+
+    //row 5 logic
+    else if  bits[3] == 0 &&  bits[4] == 0 && bits[6] == 1 && bits[7] == 1 && bits[8] ==1
+    {
+        let g = bits[0];
+        let h = bits[1];
+        let c = bits[2];
+        let f = bits[5];
+        let i = bits[9];
+
+        let dig1 = 0b1000 + c;
+        let dig2 = 0b1000 + f;
+        let dig3 = (g << 2) + (h << 1) + i;
+
+        decoded_val = dig1 * 100 + dig2 * 10 + dig3;
+    }
+
+
+    //row 6 logic
+    else if  bits[3] == 0 &&  bits[4] == 1 && bits[6] == 1 && bits[7] == 1 && bits[8] ==1
+    {
+        let d = bits[0];
+        let e = bits[1];
+        let c = bits[2];
+        let f = bits[5];
+        let i = bits[9];
+
+        let dig1 = 0b1000 + c;
+        let dig2 = (d << 2) + (e << 1) + f;
+        let dig3 = 0b1000 + i;
+
+        decoded_val = dig1 * 100 + dig2 * 10 + dig3;
+    }
+
+    //row 8 logic
+    else if  bits[3] == 1 &&  bits[4] == 1 && bits[6] == 1 && bits[7] == 1 && bits[8] ==1
+    {
+        let c = bits[2];
+        let f = bits[5];
+        let i = bits[9];
+
+        let dig1 = 0b1000 + c;
+        let dig2 = 0b1000 + f;
+        let dig3 = 0b1000 + i;
+
+        decoded_val = dig1 * 100 + dig2 * 10 + dig3;
+    }
+
+    
+    // base case should never reach here
+    else {
+        println!("not a valid decoding pattern");
+        return 999999;
+    }
+
 
 
     //if bits
