@@ -17,6 +17,7 @@ fn main() {
 
     let mut buf: [u8; 5]= [0; 5];
 
+    //read 5 bytes at a time into buf, create the associated CV
     while let Ok(()) = f1.read_exact(&mut buf){
         let first_byte = buf[0];
 
@@ -38,6 +39,7 @@ fn main() {
 
     cv_vec.sort();
 
+    //map the sorted values to decoded values then create the file and write to it
     let val_vec =  cv_vec.iter().map(|x| x.decode()).collect::<Vec<u32>>();
     let mut f2 = File::create(&a[2]).expect("can't create file");
     for val in val_vec {
@@ -86,6 +88,7 @@ pub fn decode_bcd(x: u32) -> u32 {
     .fold(0, |acc, x| acc + x )
 }
 
+// we will decode a nibble (10 bits) at a time
 pub fn decode_dpd(x: u32) -> u32{
     let mut nibbles: [u32; 3] = [0; 3];
 
@@ -96,14 +99,15 @@ pub fn decode_dpd(x: u32) -> u32{
     for val in nibbles {
         decode_nibble(val);
     }
-
-    
     
     let val = decode_nibble(nibbles[0]) + decode_nibble(nibbles[1]) * 1_000 + decode_nibble(nibbles[2]) * 1_000_000;
     return val
 }
 
+// decode the 10 bits
 pub fn decode_nibble(nibble: u32) -> u32{
+    // first we get an vec of bits, the first element is most significant
+
     let r = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
     let bits = r.iter()
     .map(|&x| get_bit_at(nibble, x))
