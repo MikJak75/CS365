@@ -15,16 +15,12 @@ fn main() {
 
     let mut cv_vec: Vec<CompValue> = Vec::new();
 
-    //let a = CompValue::Dpd(4);
-    //val_vec.push(a);
-
     let mut buf: [u8; 5]= [0; 5];
 
     while let Ok(()) = f1.read_exact(&mut buf){
         let first_byte = buf[0];
 
         let bytes_as_int = u32::from_be_bytes(
-            //(buf[1..]).try_into().unwrap()
             (buf[1..]).try_into().unwrap()
         );
 
@@ -38,35 +34,18 @@ fn main() {
         };
 
         cv_vec.push(e);
-
-        //println!("First bit: {}", &buf[0]);
     }
 
     cv_vec.sort();
 
     let val_vec =  cv_vec.iter().map(|x| x.decode()).collect::<Vec<u32>>();
-
-    //println!("{:?}", cv_vec.iter()
-    //.map(|x| x.decode()).collect::<Vec<u32>>());
-    //println!("Length of vec {}", cv_vec.len());
-
     let mut f2 = File::create(&a[2]).expect("can't create file");
     for val in val_vec {
         writeln!(f2, "{}", val).expect("error writing");
-        //writeln!(f2, "{}", val).unwrap();
     }
 
-
-
-    //println!("here1");
-    //let val = decode_dpd(0x0a395bcf);
-
-    //println!("here");
-    //println!("Decoded val is {}", val)
-    //println!("Decode val:  {}", val_vec[0].decode());
 }
 
-#[derive(Debug)]
 pub enum CompValue {
     Bcd(u32),
     Dpd(u32)
@@ -76,7 +55,6 @@ impl CompValue {
     pub fn decode(&self) -> u32 {
        match self {
             CompValue::Bcd(x) => decode_bcd(*x),
-            //CompValue::Dpd(x) => 2
             CompValue::Dpd(x) => decode_dpd(*x)
        } 
     }
@@ -84,12 +62,6 @@ impl CompValue {
 
 impl Ord for CompValue {
   fn cmp(&self, other: &Self) -> Ordering{
-    //match (self, other) {
-        //(CompValue::Bcd(x), CompValue::Bcd(y)) => decode_bcd(*x).cmp(&decode_bcd(*y)),
-        //(CompValue::Dpd(x), CompValue::Dpd(y)) => x.cmp(y),
-        //(CompValue::Bcd(_), CompValue::Dpd(_)) => Ordering::Equal,
-        //(CompValue::Dpd(_), CompValue::Bcd(_)) => Ordering::Equal,
-    //}
     self.decode().cmp(&other.decode())
   }
 }
@@ -108,10 +80,8 @@ impl PartialEq for CompValue {
 
 impl Eq for CompValue {}
 
-    //x.to_be_bytes().iter().zip([1000000 ,10000, 100, 1].iter())
 pub fn decode_bcd(x: u32) -> u32 {
     x.to_be_bytes().iter().zip([1000000 ,10000, 100, 1].iter())
-    //x.to_be_bytes().iter().zip([1, 100, 10_000, 1_000_000].iter())
     .map(|(&bits, &multiplier)| ((bits & 0xf) as u32)*multiplier + ((bits >> 4) as u32)*multiplier*10)
     .fold(0, |acc, x| acc + x )
 }
@@ -123,10 +93,7 @@ pub fn decode_dpd(x: u32) -> u32{
     nibbles[1] = (x >> 10) & 0b11_1111_1111;
     nibbles[2] = (x >> 20) & 0b11_1111_1111;
 
-    //println!("{x:#b}", nibbles);
-    
     for val in nibbles {
-        //println!("{:#b}", val);
         decode_nibble(val);
     }
 
