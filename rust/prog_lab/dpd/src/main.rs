@@ -48,7 +48,7 @@ fn main() {
 
     //println!("{:?}", cv_vec.iter()
     //.map(|x| x.decode()).collect::<Vec<u32>>());
-    println!("Length of vec {}", cv_vec.len());
+    //println!("Length of vec {}", cv_vec.len());
 
     let mut f2 = File::create(&a[2]).expect("can't create file");
     for val in val_vec {
@@ -58,11 +58,11 @@ fn main() {
 
 
 
-    println!("here1");
-    let val = decode_dpd(0x0a395bcf);
+    //println!("here1");
+    //let val = decode_dpd(0x0a395bcf);
 
-    println!("here");
-    println!("Decoded val is {}", val)
+    //println!("here");
+    //println!("Decoded val is {}", val)
     //println!("Decode val:  {}", val_vec[0].decode());
 }
 
@@ -138,16 +138,11 @@ pub fn decode_dpd(x: u32) -> u32{
 
 pub fn decode_nibble(nibble: u32) -> u32{
     let r = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
-    //let bits = ([1..=10] as [u32; 10]).iter()
     let bits = r.iter()
     .map(|&x| get_bit_at(nibble, x))
     .collect::<Vec<u32>>();
 
-    let mut decoded_val:u32 = 0;
-    //let (mut a, mut b, mut c, mut d, mut e, mut f, mut g, mut h, mut i)
-    //= (0, 0, 0, 0, 0, 0, 0, 0, 0);
-
-    //let (mut dig1, mut dig2, mut dig3) = (0, 0, 0);
+    let decoded_val:u32;
 
     if nibble == 0{
         return 0;
@@ -291,17 +286,16 @@ pub fn decode_nibble(nibble: u32) -> u32{
     // base case should never reach here
     else {
         println!("not a valid decoding pattern");
-        return 999999;
+        return 0;
     }
-
-
-
-    //if bits
-    println!("decoded val{}", decoded_val);
 
     return decoded_val;
 }
 
+// helper function for decode_bcd)
+// looking back on it now probably a little unneccsary but probably
+// no one reads this
+// comment like and subscribe if you got this far into the code
 pub fn get_bit_at(input: u32, n: u32) -> u32{
     (input >> n) & 1
 }
